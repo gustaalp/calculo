@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Resolva Fácil - Assistente Escolar Rústico</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>Resolva Fácil</header>
+
+  <!-- Sign Up Screen -->
+  <section id="signup-screen" class="screen active" aria-label="Tela de cadastro de usuário">
+    <h2>Criar Conta</h2>
+    <label for="signup-username">Nome de usuário:</label>
+    <input type="text" id="signup-username" autocomplete="username" placeholder="Escolha seu nome" aria-required="true" />
+    <label for="signup-password">Senha:</label>
+    <input type="password" id="signup-password" autocomplete="new-password" placeholder="Escolha uma senha" aria-required="true" />
+    <button id="signup-btn" aria-label="Criar conta">Cadastrar</button>
+    <button id="to-login-btn" aria-label="Ir para tela de login" class="switch-button">Já tem conta? Faça login</button>
+  </section>
+
+  <!-- Login Screen -->
+  <section id="login-screen" class="screen" aria-label="Tela de login do usuário">
+    <h2>Login</h2>
+    <label for="login-username">Nome de usuário:</label>
+    <input type="text" id="login-username" autocomplete="username" placeholder="Seu nome" aria-required="true" />
+    <label for="login-password">Senha:</label>
+    <input type="password" id="login-password" autocomplete="current-password" placeholder="Sua senha" aria-required="true" />
+    <button id="login-btn" aria-label="Entrar no sistema">Entrar</button>
+    <button id="to-signup-btn" aria-label="Ir para tela de cadastro" class="switch-button">Criar nova conta</button>
+  </section>
+
+  <!-- Selection Screen -->
+  <section id="selection-screen" class="screen" aria-label="Seleção de série e matéria">
+    <h2>Escolha sua série e matéria</h2>
+    <label for="series-select">Selecione sua série:</label>
+    <select id="series-select" aria-required="true">
+      <option value="" disabled selected>-- Escolha a série --</option>
+      <optgroup label="Ensino Fundamental">
+        <option value="6">6º Ano</option>
+        <option value="7">7º Ano</option>
+        <option value="8">8º Ano</option>
+        <option value="9">9º Ano</option>
+      </optgroup>
+      <optgroup label="Ensino Médio">
+        <option value="1m">1º Ano Médio</option>
+        <option value="2m">2º Ano Médio</option>
+        <option value="3m">3º Ano Médio</option>
+      </optgroup>
+    </select>
+
+    <label for="subject-select">Selecione a matéria:</label>
+    <select id="subject-select" aria-required="true">
+      <option value="" disabled selected>-- Escolha a matéria --</option>
+      <optgroup label="Matérias Básicas">
+        <option value="matematica">Matemática</option>
+        <option value="portugues">Português</option>
+        <option value="historia">História</option>
+        <option value="geografia">Geografia</option>
+        <option value="ciencias">Ciências</option>
+        <option value="ingles">Inglês</option>
+      </optgroup>
+      <optgroup label="Outras Matérias">
+        <option value="filosofia">Filosofia</option>
+        <option value="sociologia">Sociologia</option>
+        <option value="artes">Artes</option>
+        <option value="educacao-fisica">Educação Física</option>
+        <option value="informatica">Informática</option>
+        <option value="quimica">Química</option>
+        <option value="fisica">Física</option>
+        <option value="biologia">Biologia</option>
+        <option value="literatura">Literatura</option>
+        <option value="redacao">Redação</option>
+      </optgroup>
+    </select>
+
+    <button id="to-problem-btn" aria-label="Avançar para o envio da questão">Continuar</button>
+  </section>
+
+  <!-- Outras telas e modais aqui -->
+
+  <script src="script.js"></script>
+</body>
+</html>
